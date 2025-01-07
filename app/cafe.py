@@ -11,7 +11,7 @@ class Cafe:
     def visit_cafe(self, visitor: dict) -> str:
         if "vaccine" not in visitor:
             raise NotVaccinatedError(
-                f"All {visitor['name']} should be vaccinated"
+                f"{visitor['name']} should be vaccinated"
             )
 
         expiration_date = visitor["vaccine"]["expiration_date"]
